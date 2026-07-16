@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="./assets/favicon.ico" type="image/png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Importify</title>
+  <style>
+    body {
+      background: radial-gradient(circle at top left, rgba(99,102,241,0.18), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(16,185,129,0.12), transparent 18%),
+        linear-gradient(180deg, #0b1221 0%, #111827 100%);
+    }
+    .glass {
+      background: rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(24px);
+    }
+  </style>
+</head>
+<body class="min-h-screen font-sans text-slate-100">
+  <div class="mx-auto flex min-h-screen max-w-[1600px] flex-col px-4 py-6 sm:px-6 lg:px-8">
+    <header class="relative">
+      
+      <nav class="glass sticky top-0 z-50 mb-8 flex flex-col gap-4 rounded-3xl border border-white/10 bg-slate-900/70 px-6 py-4 shadow-xl shadow-slate-950/40 backdrop-blur-xl md:flex-row md:items-center md:justify-between">
+        <a href="#/" class="flex items-center gap-3">
+          <img src="./assets/logo.jpg" alt="Importify logo" class="h-12 w-12 rounded-full object-cover shadow-lg" />
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-slate-300">Importify</p>
+            <p class="text-xs text-slate-400">Logística y comercio</p>
+          </div>
+        </a>
+        <div class="flex flex-wrap items-center gap-4 text-sm text-slate-200" id="nav-links">
+          <a href="#/" data-route="/" class="nav-link pb-1 border-b-2 border-transparent transition hover:border-teal-300">Inicio</a>
+          <a href="#/simulator" data-route="/simulator" class="nav-link pb-1 border-b-2 border-transparent transition hover:border-teal-300">Simulador</a>
+          <a href="#/dashboard" data-route="/dashboard" class="nav-link pb-1 border-b-2 border-transparent transition hover:border-teal-300">Historial</a>
+        </div>
+      </nav>
+    </header>
+
+    
+    <main id="app" class="flex-1"></main>
+
+    <footer class="mt-12 flex justify-center text-center text-xs text-slate-500">
+      © 2026 Importify - Plataforma moderna de fabricantes y logística
+    </footer>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
