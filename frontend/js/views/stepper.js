@@ -106,13 +106,7 @@ export async function renderStepper(container, onComplete) {
             </label>
           </div>
         </div>
-
-        <div>
-          <label for="fob" class="text-sm font-medium text-slate-300">Precio base estimado del fabricante (FOB - opcional, para mayor precisión)</label>
-          <div class="mt-3 flex items-center gap-3 rounded-3xl border border-white/10 bg-slate-900/80 px-4 py-4 shadow-inner shadow-slate-950/30">
-            <span class="text-slate-400">$</span>
-            <input id="fob" type="number" step="0.01" min="0" placeholder="0.00" class="w-full bg-transparent text-slate-100 outline-none placeholder:text-slate-500" />
-          </div>
+      
         </div>
 
         <button type="submit" id="stepper-submit" class="mt-8 w-full rounded-3xl bg-emerald-500 px-6 py-4 text-base font-semibold text-slate-950 transition hover:bg-emerald-400">
