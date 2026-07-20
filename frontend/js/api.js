@@ -1,4 +1,4 @@
-const BASE_URL = 'http://localhost:4000/api';
+const BASE_URL = 'https://importify-production.up.railway.app/api';
 
 export async function getCountries() {
   const res = await fetch(`${BASE_URL}/countries`);
