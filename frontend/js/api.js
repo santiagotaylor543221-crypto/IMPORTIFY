@@ -43,3 +43,8 @@ export async function getSimulationDetail(id) {
   const res = await fetch(`${BASE_URL}/simulations/${id}`);
   return res.json();
 }
+
+export async function deleteSimulation(id) {
+  const res = await fetch(`${BASE_URL}/simulations/${id}`, { method: 'DELETE' });
+  return res.json();
+}
