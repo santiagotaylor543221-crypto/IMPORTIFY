@@ -2,9 +2,9 @@
   "name": "importify",
   "version": "1.0.0",
   "description": "Proyecto combinado Importify",
-  "main": "backend/index_b.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node backend/index_b.js",
+    "start": "node index.js",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
