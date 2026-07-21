@@ -115,7 +115,7 @@ function renderDetalle(sim) {
 
       <div class="grid gap-6 md:grid-cols-2">
 
-        <!-- Datos del fabricante -->
+<!-- Datos del fabricante -->
         <div class="rounded-[24px] border border-white/10 bg-slate-900/80 p-5 space-y-3">
           <p class="text-sm font-semibold uppercase tracking-wide text-slate-400">Fabricante</p>
           <div class="space-y-2 text-sm">
@@ -139,6 +139,18 @@ function renderDetalle(sim) {
               <span class="text-slate-300">${sim.manufacturer_country}</span>
             </div>` : ''}
           </div>
+
+          ${sim.map_embed_url ? `
+          <div class="mt-3 overflow-hidden rounded-2xl border border-white/10">
+            <iframe
+              src="${sim.map_embed_url}"
+              width="100%"
+              height="200"
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>` : ''}
         </div>
 
         <!-- Resumen de costos -->
