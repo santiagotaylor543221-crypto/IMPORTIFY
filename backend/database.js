@@ -8,7 +8,7 @@ console.log('DBG DB_PASSWORD type:', typeof process.env.DB_PASSWORD, 'present:',
 console.log('DBG DB_HOST type:', typeof process.env.DB_HOST, 'present:', !!process.env.DB_HOST);
 console.log('DBG DB_PORT type:', typeof process.env.DB_PORT, 'present:', !!process.env.DB_PORT);
 console.log('DBG DB_NAME type:', typeof process.env.DB_NAME, 'present:', !!process.env.DB_NAME);
-console.log('DBG DB_HOST VALUE:', process.env.DB_HOST);
+
 
 const pool = new Pool({
   user: String(process.env.DB_USER || ''),
