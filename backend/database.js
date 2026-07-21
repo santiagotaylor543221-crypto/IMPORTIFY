@@ -1,4 +1,6 @@
 require('dotenv').config();
+const dns = require('dns');
+dns.setDefaultResultOrder('ipv4first');
 const { Pool } = require('pg');
 
 console.log('DBG DB_USER type:', typeof process.env.DB_USER, 'present:', !!process.env.DB_USER);
