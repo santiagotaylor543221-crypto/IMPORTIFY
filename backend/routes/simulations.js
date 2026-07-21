@@ -37,6 +37,7 @@ async function getSimulationById(req, res, parts) {
        m.name         AS manufacturer_name,
        m.contact_email,
        m.website,
+       m.map_embed_url,
        c.name         AS manufacturer_country,
        po.base_fob_price,
        tr.tariff_rate,
